@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A responsive, editorial portfolio for Saurav Biswal, built with plain HTML, CSS, and JavaScript. The site presents selected work through interactive project doors, alongside a personal introduction, timeline, skills, and contact details.",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/app.js --bundle --outfile=dist/app.js --format=esm --minify",
+    "dev": "npm run build && python -m http.server 4173",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saurav-Biswal/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web-design",
+    "vanilla-javascript"
+  ],
+  "author": "Saurav Biswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saurav-Biswal/portfolio/issues"
+  },
+  "homepage": "https://github.com/Saurav-Biswal/portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
